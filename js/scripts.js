@@ -3,17 +3,17 @@ $('#start').on('click', function () {
   })
   
   var questions = [{
-    question: 'What does Ty Webb call a doughnut without a hole?',
-    answers: ['Black And White Cookie', 'Cake', 'Danish', 'Golf Ball'],
-    correctAnswer: 'Danish'
+    question: 'What is the full version of HTML',
+    answers: ['HMLT', 'HTML', 'HTLM'],
+    correctAnswer: 'HTML'
   }, {
-    question: 'What does Carl say he will get on his death-bed?',
-    answers: ['Head Greens-Keeper Job', 'Total Consciousness', 'X-Ray Vision', 'Free Ticket To Heaven'],
-    correctAnswer: 'Total Consciousness'
+    question: 'Is C++ a low level language?',
+    answers: ['Yes', 'No'],
+    correctAnswer: 'Yes'
   }, {
-    question: 'What does Carl use to clean up his place after Ty hits his ball?',
-    answers: ['Leaf-Blower', 'Shovel', 'His Hands', 'Rake'],
-    correctAnswer: 'Leaf-Blower'
+    question: 'What is the other name for Javascript?',
+    answers: ['ECMAscript', 'JS', 'I dont know'],
+    correctAnswer: 'ECMAscript'
   }, {
     question: 'What son of the Dali Lama did Carl caddy for when he was in Tibet?',
     answers: ['11th', '14th', '13th', '12th'],
@@ -110,7 +110,7 @@ $('#start').on('click', function () {
         $('#subWrapper').append("<h3>GAME OVER!</h3>");
         $('#subWrapper').append("<h3>Correct Answers:" + this.correct + "</h3>");
         $('#subWrapper').append("<h3>Incorrect Answers:" + this.incorrect + "</h3>");
-        $('#subWrapper').append("<h3>Unanswerd:" + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+        $('#subWrapper').append("<h3>Unanswered:" + (questions.length - (this.incorrect + this.correct)) + "</h3>");
     }
   
   }
