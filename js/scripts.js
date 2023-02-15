@@ -15,17 +15,17 @@ $('#start').on('click', function () {
     answers: ['ECMAscript', 'JS', 'I dont know'],
     correctAnswer: 'ECMAscript'
   }, {
-    question: 'What son of the Dali Lama did Carl caddy for when he was in Tibet?',
-    answers: ['11th', '14th', '13th', '12th'],
-    correctAnswer: '13th'
+    question: 'Is git a version control system?',
+    answers: ['Yes', 'No'],
+    correctAnswer: 'Yes'
   }, {
-    question: 'Who made the gopher in the movie Caddyshack?',
-    answers: ['George Lucas', 'Harold Ramis', 'Steven Spielberg', 'Computer'],
-    correctAnswer: 'George Lucas'
+    question: 'Which of the following is a programming language?',
+    answers: ['JavaScript', 'Python', 'All of the above'],
+    correctAnswer: 'All of the above'
   }, {
-    question: 'What does Rodney Dangerfield hit with the golf ball before it bounces back and hits his shoulder?',
-    answers: ['A Tree', 'A Fire Hydrant', 'A Ball Cleaner', 'Chevy Chase'],
-    correctAnswer: 'A Tree'
+    question: 'Is HTML a programming language?',
+    answers: ['Yes', 'No'],
+    correctAnswer: 'Yes'
   }];
   
   var game = {
