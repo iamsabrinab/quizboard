@@ -46,9 +46,9 @@ $('#start').on('click', function () {
         $('#subWrapper').prepend('<h2>Time Remaining: <span id="counter">20</span> seconds </h2>');
         $('#start').remove();
         for (var i = 0; i < questions.length; i++) {
-            $('#subWrapper').append('<h2>' + questions[i].question + '</h2>')
+            $('#subWrapper').append('<h4>' + questions[i].question + '</h4>')
             for (var j = 0; j < questions[i].answers.length; j++) {
-                $('#subWrapper').append("<h2><input type='radio' name='question-" + i + "'value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
+                $('#subWrapper').append("<h6><input type='radio' name='question-" + i + "'value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
             }
         }
     },
