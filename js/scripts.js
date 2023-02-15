@@ -43,10 +43,10 @@ $('#start').on('click', function () {
     },
     start: function () {
         timer = setInterval(game.countdown, 1000);
-        $('#subWrapper').prepend('<h2>Time Remaining: <span id="counter">20</span> seconds </h2>');
+        $('#subWrapper').prepend('<h2><strong>Time Remaining: <span id="counter">20</span> seconds </strong></h2>');
         $('#start').remove();
         for (var i = 0; i < questions.length; i++) {
-            $('#subWrapper').append('<h4>' + questions[i].question + '</h4>')
+            $('#subWrapper').append('<h4><stong>' + questions[i].question + '</strong></h4>')
             for (var j = 0; j < questions[i].answers.length; j++) {
                 $('#subWrapper').append("<h6><input type='radio' name='question-" + i + "'value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
             }
